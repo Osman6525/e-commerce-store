@@ -1,0 +1,70 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>My E-Commerce Store</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Laptops</a>
+      <a href="#">Smartphones</a>
+      <a href="#">Smartwatches</a>
+      <a href="#">TVs</a>
+      <a href="#">Appliances</a>
+    </nav>
+    <div class="cart">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="products" id="product-list">
+    <!-- Example Product -->
+    <div class="product">
+      <img src="images/laptop.jpg" alt="Laptop">
+      <h3>Laptop Pro X</h3>
+      <p>$1200</p>
+      <button onclick="addToCart('Laptop Pro X', 1200)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/iphone.jpg" alt="iPhone">
+      <h3>iPhone 14</h3>
+      <p>$999</p>
+      <button onclick="addToCart('iPhone 14', 999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/smartwatch.jpg" alt="Smartwatch">
+      <h3>Smartwatch Ultra</h3>
+      <p>$299</p>
+      <button onclick="addToCart('Smartwatch Ultra', 299)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/tv.jpg" alt="Smart TV">
+      <h3>4K Smart TV</h3>
+      <p>$799</p>
+      <button onclick="addToCart('4K Smart TV', 799)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="cart-total">0</span></h3>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  
+  
